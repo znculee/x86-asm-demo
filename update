@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd `dirname $0`
+CURRENTDIR=`pwd`
+cd ${CURRENTDIR}
+
+git add -A
+git commit --amend -m 'up2date'
+git push -f
